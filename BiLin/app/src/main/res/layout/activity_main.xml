@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:bolim="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/ll_mainView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.example.bilin.views.MainBottomCustomerView
+                android:id="@+id/tab_indicator_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                bolim:color="#45c01a"
+                bolim:icon="@mipmap/ic_tab_contact"
+                bolim:text="@string/tab_contact"
+                bolim:text_size="12sp"/>
+
+            <com.example.bilin.views.MainBottomCustomerView
+                android:id="@+id/tab_indicator_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                bolim:color="#45c01a"
+                bolim:icon="@mipmap/ic_tab_allfriends"
+                bolim:text="@string/tab_allfriends"
+                bolim:text_size="12sp"/>
+
+            <com.example.bilin.views.MainBottomCustomerView
+                android:id="@+id/tab_indicator_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                bolim:color="#45c01a"
+                bolim:icon="@mipmap/ic_tab_found"
+                bolim:text="@string/tab_found"
+                bolim:text_size="12sp"/>
+
+            <com.example.bilin.views.MainBottomCustomerView
+                android:id="@+id/tab_indicator_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                bolim:color="#45c01a"
+                bolim:icon="@mipmap/ic_tab_me"
+                bolim:text="@string/tab_me"
+                bolim:text_size="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

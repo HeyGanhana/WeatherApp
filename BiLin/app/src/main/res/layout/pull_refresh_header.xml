@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bolim="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    >
+
+    <com.example.bilin.views.CircleAnimantionView
+        android:id="@+id/header_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        bolim:circle_color="@color/titleTextColor"
+        bolim:icon_size="40dp"
+        >
+
+    </com.example.bilin.views.CircleAnimantionView>
+    <!--<ImageView
+        android:id="@+id/header_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pull_refresh"
+        />-->
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_img"
+        android:layout_centerHorizontal="true"
+        android:text="text"
+        android:textSize="8sp"/>
+
+    <ProgressBar
+        android:id="@+id/header_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/header_text"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

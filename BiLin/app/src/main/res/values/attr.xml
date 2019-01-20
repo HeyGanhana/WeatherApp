@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="icon" format="reference"></attr>
+    <attr name="color" format="color"></attr>
+    <attr name="text" format="string"></attr>
+    <attr name="text_size" format="dimension"></attr>
+
+    <!-- 此处的name为自定义View的类名-->
+    <declare-styleable name="MainBottomCustomerView">
+        <attr name="icon"></attr>
+        <attr name="color"></attr>
+        <attr name="text"></attr>
+        <attr name="text_size"></attr>
+    </declare-styleable>
+
+    <!--animation circle View-->
+    <attr name="circle_color" format="color"/>
+    <attr name="icon_size" format="dimension"/>
+
+    <declare-styleable name="CircleAnimantionView">
+        <attr name="circle_color"></attr>
+        <attr name="icon_size"></attr>
+    </declare-styleable>
+</resources>

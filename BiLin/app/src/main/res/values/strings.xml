@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Anyway</string>
+    <string name="action_search">search</string>
+    <string name="action_add">add</string>
+    <string name="menu_group">发起群聊</string>
+    <string name="menu_add">添加好友</string>
+    <string name="menu_scan">扫一扫</string>
+    <string name="menu_feedback">问题反馈</string>
+    <string name="tab_contact">天气</string>
+    <string name="tab_allfriends">好友列表</string>
+    <string name="tab_found">发现</string>
+    <string name="tab_me">我</string>
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionOverflowButtonStyle">@style/BiLinActionButtonOverflowStyle</item>
+        <!--<item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowActionBar">false</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:fitsSystemWindows">true</item>
+        <!--<item name="android:statusBarColor">@color/float_transparent</item>-->
+
+    </style>
+    <style name="ToolBarTextStyle" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+    </style>
+    <style name="ExpandToolBarTextStyle" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:textSize">80sp</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:fontFamily">"sans-serif"</item>
+    </style>
+    <style name="BiLinActionButtonOverflowStyle">
+        <item name="android:src">@mipmap/ic_action_add</item>
+    </style>
+    <style name="MyActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

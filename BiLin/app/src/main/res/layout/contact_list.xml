@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.bilin.views.PullRefreshView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <!--android:background="@color/float_transparent"-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:elevation="0dp">
+            <!--app:contentScrim="@color/float_transparent"-->
+            <!--app:statusBarScrim="@color/float_transparent"-->
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:collapsedTitleTextAppearance="@style/ToolBarTextStyle"
+
+                app:expandedTitleMarginBottom="2dp"
+                app:expandedTitleMarginStart="20dp"
+                app:expandedTitleTextAppearance="@style/ExpandToolBarTextStyle"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                >
+
+                <!--<ImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/background4"
+                    app:layout_collapseMode="parallax"/>-->
+                <include
+                    android:id="@+id/ll_today"
+                    layout="@layout/weather_list_header_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:layout_collapseMode="pin"/>
+
+                <include
+                    layout="@layout/tool_bar_view"/>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- <com.example.bilin.views.MyNestedScrollViewParent
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:id="@+id/refresh_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/refresh"
+                 android:visibility="gone"/>-->
+
+        <!--<TextView
+            android:id="@+id/refresh_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1111111111111111111111111"/>-->
+        <!--<include
+            android:id="@+id/id_toolbar"
+            layout="@layout/tool_bar_view"/>-->
+
+        <!--<com.example.bilin.views.MyNestedScrollViewChild
+            android:id="@+id/nestScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <!--<android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+            <LinearLayout
+                android:id="@+id/ll_child_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.example.bilin.views.HorizontalRecyclerView
+                    android:id="@+id/horizontal_weather_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/weather_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/life_style_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e5e4e4"
+                    android:padding="2dp"
+                    />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <!--</com.example.bilin.views.MyNestedScrollViewChild>-->
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.example.bilin.views.PullRefreshView>
